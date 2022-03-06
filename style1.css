@@ -1,0 +1,38 @@
+.btn{
+    background-color: blueviolet;
+    color: yellow;
+    margin: 10px;
+    padding: 10px;
+    font-family: Poppins;
+    font-weight: bold;   
+    margin-top: 20px; 
+}
+
+ .tabel{
+    background-color: turquoise;
+    margin: 10px;
+    border-style: solid;
+    padding: 20px;
+    font-family: Poppins;
+    font-size: smaller;
+ }
+
+ .header{
+     color: black;
+     padding-bottom: 20px;
+     font-size: larger;
+ }
+
+ .hsl{
+     background-color: white;
+     border-style: unset;
+     font-family: Poppins;
+     font-weight: bold;   
+ }
+
+ .input{
+    border-color: blueviolet;
+    font-family: Poppins;
+ }
+
+ 

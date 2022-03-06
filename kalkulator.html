@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalkulator</title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <form name="calc">
+            <table class="tabel">
+                <tr>
+                    <th class="header" colspan="3" align="center">KALKULATOR SEDERHANA</th>
+                </tr>
+                <tr>
+                    <td>Masukkan Angka 1</td><td>:</td>
+                    <td><input class="input" type="number" name="angka1"></td>
+                </tr>
+                <tr>
+                    <td>Masukkan Angka 2</td><td>:</td>
+                    <td><input class="input"  type="number" name="angka2"></td>
+                </tr>
+
+                <tr>
+                    <td><b>Hasil</b></td><td>:</td>
+                    <td><input class="hsl" name="hasil"></td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">
+                    <input class="btn" type="button" onclick="tambah()" value="  +  ">
+                    <input class="btn" type="button" onclick="kurang()" value="  -  ">
+                    <input class="btn" type="button" onclick="kali()" value="  x  ">
+                    <input class="btn" type="button" onclick="bagi()" value="  ÷  ">
+                    <input class="btn" type="button" onclick="modulus()" value="  %  ">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
+
+<script>
+    const tambah = () => {
+        let angka1=parseFloat(document.calc.angka1.value);
+        let angka2=parseFloat(document.calc.angka2.value);
+        let hasil = angka1 + angka2;
+    document.calc.hasil.value=hasil;
+    }
+
+    const kurang = () => {
+        let angka1=parseFloat(document.calc.angka1.value);
+        let angka2=parseFloat(document.calc.angka2.value);
+        let hasil = angka1 - angka2;
+    document.calc.hasil.value=hasil;
+    }
+
+    const kali = () => {
+        let angka1=parseFloat(document.calc.angka1.value);
+        let angka2=parseFloat(document.calc.angka2.value);
+        let hasil = angka1 * angka2;
+    document.calc.hasil.value=hasil;
+    }
+
+    const bagi = () => {
+        let angka1=parseFloat(document.calc.angka1.value);
+        let angka2=parseFloat(document.calc.angka2.value);
+        let hasil = angka1 / angka2;
+    document.calc.hasil.value=hasil;
+    }
+
+    const modulus = () => {
+        let angka1=parseFloat(document.calc.angka1.value);
+        let angka2=parseFloat(document.calc.angka2.value);
+        let hasil = angka1 % angka2;
+    document.calc.hasil.value=hasil;
+    }
+</script>
